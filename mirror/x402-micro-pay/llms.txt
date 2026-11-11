@@ -1,0 +1,129 @@
+# grokzilla.shop / x402-micro-pay.com
+
+> Humanless microservices marketplace for AI agents. Pay-per-call with x402 (USDC on Base mainnet eip155:8453). Humans can also pay with Stripe.
+
+## Identity
+
+- Primary (canonical): https://grokzilla.shop
+- Alias (same content, canonical points to primary): https://x402-micro-pay.com
+- Protocol: x402 v2 exact scheme
+- Network: eip155:8453 (Base mainnet)
+- Asset: USDC 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913
+- Billing: paid only (free_beta: false)
+
+## Critical agent endpoints (start here)
+
+- Try first (cheapest paid call): POST https://grokzilla.shop/api/skills/uuid-mint
+  Body: {"count":1,"version":4} · Price: $0.003 USDC on Base (atomic 3000) · payTo 0xc22f9CAEBAc37fE72D5142f35f21f6696Ea9Ef69
+  Buyer gets: {"ok":true,"ids":["…uuid v4…"],"skill":"uuid_mint",…} for job IDs / idempotency keys
+  Flow: unpaid POST → 402 + PAYMENT-REQUIRED → PAYMENT-SIGNATURE retry
+- Manifest: https://grokzilla.shop/.well-known/x402
+- Catalog (JSON): https://grokzilla.shop/api/catalog
+- OpenAPI: https://grokzilla.shop/openapi.json
+- Humanless contract: https://grokzilla.shop/contracts/humanless.json
+- Health: https://grokzilla.shop/health
+- MCP (Streamable HTTP, JSON): https://grokzilla.shop/mcp
+- MCP quickstart: https://grokzilla.shop/agents (markdown: https://grokzilla.shop/agents.md)
+- MCP discovery: https://grokzilla.shop/.well-known/mcp · server card: https://grokzilla.shop/.well-known/mcp/server-card.json
+- Pricing: https://grokzilla.shop/pricing
+- Terms: https://grokzilla.shop/terms
+- Daily utils (first-party): POST /api/skills/json-flatten, /api/skills/text-diff, /api/skills/url-normalize, /api/skills/html-clean, /api/skills/json-schema-validate, /api/skills/keyword-extract, /api/skills/token-count, /api/skills/json-sort ($0.003), /api/skills/sha256 ($0.003), /api/skills/uuid-mint ($0.003), /api/skills/slugify ($0.003), /api/skills/pii-redact ($0.003), /api/skills/csv-normalize ($0.003), /api/skills/base64 ($0.003), /api/skills/epoch-convert ($0.003), /api/skills/url-to-markdown ($0.003), /api/skills/token-risk ($0.005), /api/skills/json-repair ($0.0041), /api/skills/cron-next ($0.0031)
+- Skill endpoints are POST only: POST /api/skills/<slug> (POST only; GET returns usage and the 402 payment terms, never runs the skill)
+- Data services (free public sources, not charged on empty/failed): POST /api/skills/token-price ($0.002), /api/skills/email-check ($0.0032), /api/skills/news-brief ($0.0101), /api/skills/ip-intel ($0.0033), /api/skills/llm-cost-quote ($0.0034), /api/skills/address-validate ($0.001), /api/skills/gas-price ($0.001), /api/skills/erc20-meta ($0.002), /api/skills/dns-lookup ($0.002), /api/skills/name-resolve ($0.003), /api/skills/tx-status ($0.002), /api/skills/hex-decode ($0.001), /api/skills/block-number ($0.001), /api/skills/whois-rdap ($0.003)
+
+## How agents pay
+
+1. GET /.well-known/x402 or /api/catalog for services + prices.
+2. POST a skill endpoint. Unpaid calls return HTTP 402 + PAYMENT-REQUIRED header.
+3. Sign exact USDC payment to the pay_to address on Base mainnet, retry with PAYMENT-SIGNATURE.
+4. Receive JSON result. Respect max_spend_per_call / max_spend_per_session in humanless.json.
+
+## MCP
+
+Streamable HTTP JSON-RPC at https://grokzilla.shop/mcp. Quickstart: https://grokzilla.shop/agents. Guides: https://grokzilla.shop/docs/mcp. Discovery tools (`list_skills`, `get_skill`) are free. Paid tools use the same x402 prices as the HTTP routes (USDC on Base). A client that cannot attach an x402 payment receives a PaymentRequired tool result and should stop. The server does not pay and does not hold a wallet key.
+
+## Native skills (paid, Base mainnet)
+
+| id | method | endpoint | typical price |
+|----|--------|----------|---------------|
+| osint_graph | POST | /api/skills/osint-graph | $0.01 |
+| seo | POST | /api/skills/seo | $0.012 |
+| seo_v2 | POST | /api/skills/seo-v2 | $0.0497 |
+| seo_compare | POST | /api/skills/seo-compare | $0.0503 |
+| agent_ready_audit | POST | /api/skills/agent-ready-audit | $0.0499 |
+| agent_ready_kit | POST | /api/skills/agent-ready-kit | $0.2502 |
+| agent_ready_recheck | POST | /api/skills/agent-ready-recheck | $0.0102 |
+| ai_detector | POST | /api/skills/ai-detector | $0.01 |
+| json_flatten | POST | /api/skills/json-flatten | $0.006 |
+| json_sort | POST | /api/skills/json-sort | $0.003 |
+| text_diff | POST | /api/skills/text-diff | $0.006 |
+| url_normalize | POST | /api/skills/url-normalize | $0.005 |
+| html_clean | POST | /api/skills/html-clean | $0.008 |
+| json_schema_validate | POST | /api/skills/json-schema-validate | $0.006 |
+| keyword_extract | POST | /api/skills/keyword-extract | $0.008 |
+| token_count | POST | /api/skills/token-count | $0.004 |
+| sha256 | POST | /api/skills/sha256 | $0.003 |
+| uuid_mint | POST | /api/skills/uuid-mint | $0.003 |
+| slugify | POST | /api/skills/slugify | $0.003 |
+| pii_redact | POST | /api/skills/pii-redact | $0.003 |
+| csv_normalize | POST | /api/skills/csv-normalize | $0.003 |
+| base64 | POST | /api/skills/base64 | $0.003 |
+| epoch_convert | POST | /api/skills/epoch-convert | $0.003 |
+| url_to_markdown | POST | /api/skills/url-to-markdown | $0.003 |
+| token_risk | POST | /api/skills/token-risk | $0.005 |
+| json_repair | POST | /api/skills/json-repair | $0.0041 |
+| cron_next | POST | /api/skills/cron-next | $0.0031 |
+| token_price | POST | /api/skills/token-price | $0.002 |
+| email_check | POST | /api/skills/email-check | $0.0032 |
+| news_brief | POST | /api/skills/news-brief | $0.0101 |
+| ip_intel | POST | /api/skills/ip-intel | $0.0033 |
+| llm_cost_quote | POST | /api/skills/llm-cost-quote | $0.0034 |
+| address_validate | POST | /api/skills/address-validate | $0.001 |
+| gas_price | POST | /api/skills/gas-price | $0.001 |
+| erc20_meta | POST | /api/skills/erc20-meta | $0.002 |
+| dns_lookup | POST | /api/skills/dns-lookup | $0.002 |
+| name_resolve | POST | /api/skills/name-resolve | $0.003 |
+| tx_status | POST | /api/skills/tx-status | $0.002 |
+| hex_decode | POST | /api/skills/hex-decode | $0.001 |
+| block_number | POST | /api/skills/block-number | $0.001 |
+| whois_rdap | POST | /api/skills/whois-rdap | $0.003 |
+
+Exact live prices: GET /api/catalog (price_usd). Every call is paid. 402 responses include JSON body + PAYMENT-REQUIRED header.
+
+## Partner resale (separate group; resold partner services)
+
+Resold partner services (provider x402-mcp.onrender.com, not ours). GET with query params, paid per call via x402 on Base. Your payment settles first; if the partner then fails you get charged:true plus a full refund record. Output is normalized to grokzilla.partner-resale.v1. Separate from the native skills list.
+
+| id | method | endpoint | price | query params (* required) |
+|----|--------|----------|-------|---------------------------|
+| base-tx-decision | GET | /api/resale/base/tx-decision | $0.020001 (20001 atomic) | gas, urgency |
+| base-finality-check | GET | /api/resale/base/finality-check | $0.020002 (20002 atomic) | tx* |
+| nyc-property-check | GET | /api/resale/us/nyc/property-check | $0.020003 (20003 atomic) | address* |
+| mn-property-check | GET | /api/resale/mn/property-check | $0.020004 (20004 atomic) | address* |
+
+Output: JSON, schema `grokzilla.partner-resale.v1` (envelope ok/schema/route/provider/subject/verdict/status/summary/risk_flags/evidence/sources/disclaimer/checked_at/upstream_tx + route-specific `data`). Full JSON Schemas: GET /api/catalog (partner_resale.services[].output_schema). These are not MCP tools and not in the native skills count.
+
+## Kits (one-time download, x402)
+
+- [Domain-to-Vercel MCP kit (bring your own keys)](https://grokzilla.shop/kits/domain-to-vercel): $5.00 USDC on Base. `POST https://grokzilla.shop/api/kits/domain-to-vercel/buy` returns a download link (expires 15 min, 3 downloads). License: [No-Resale](https://grokzilla.shop/kits/license).
+
+## Credit pack
+- POST /api/credits/buy — Credit pack: 300 calls of any skill listed at $0.005 or less, for one $1.00 x402 payment. Returns a token (shown once) for the X-Credit-Token header. Failed calls use no credit. Expires after 180 days.
+- GET /api/credits/balance (header X-Credit-Token) — free balance check.
+
+## Skill notes
+
+- ai_detector ($0.01): trained classifier, about 78% accurate on a held-out benchmark (not a guarantee). `uncertain` results suggest a rerun on a longer section (300+ words). Tell phrases are only a secondary "possible AI influence" signal.
+- seo_v2 / seo_compare / agent_ready_audit / agent_ready_kit / agent_ready_recheck: not charged when the site blocks us or is unreachable (422, score null, charged:false; payment is never settled). Agent-Ready inputs: `override_full_disallow` (bool, default false: never open a site-wide `Disallow: /` to AI bots unless true), `runs_a2a_agent` (bool, default false: agent-card.json only if true). Recheck needs `report_id` (400 before payment). Docs: https://grokzilla.shop/docs/seo-v2 and https://grokzilla.shop/docs/agent-ready
+
+## Docs for agents
+
+- AGENTS.md: https://grokzilla.shop/AGENTS.md
+- Tutorials: https://grokzilla.shop/docs
+- MCP guides: https://grokzilla.shop/docs/mcp
+  - Your agent pays for a tool call in 30 seconds: https://grokzilla.shop/docs/mcp/agent-pays-in-30-seconds
+  - A paid MCP tool call, step by step: https://grokzilla.shop/docs/mcp/mcp-paid-call-example
+  - Capping what your agent spends (per-call cap, daily budget): https://grokzilla.shop/docs/mcp/spend-limits
+- Quickstart (prose): https://grokzilla.shop/quickstart
+- Full text for LLMs: https://grokzilla.shop/llms-full.txt
+- Source: https://github.com/nicsins/ai-micro-pay

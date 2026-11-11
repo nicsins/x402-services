@@ -1,0 +1,555 @@
+{
+  "probed_at": "2026-10-30T18:53:36.486307-05:00",
+  "vendors": [
+    {
+      "name": "emblemai/emblem-mcp",
+      "vendor": "emblemai",
+      "url": "https://emblemvault.ai/api/mcp",
+      "smitheryUseCount": 25084,
+      "serverName": "EmblemAI MCP",
+      "tools": "133",
+      "homepage": "https://emblemvault.ai/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "deficlow/zipp",
+      "vendor": "deficlow",
+      "url": "https://zippfeed.com/mcp/",
+      "smitheryUseCount": 16317,
+      "serverName": "Zipp",
+      "tools": "6",
+      "homepage": "https://zippfeed.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "digby-oldridge/colour-memory-api",
+      "vendor": "digby-oldridge",
+      "url": "https://api.colourmemory.com/mcp",
+      "smitheryUseCount": 15140,
+      "serverName": null,
+      "tools": "91",
+      "homepage": "https://api.colourmemory.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "segellfosc-dev-ayfx/menjometre",
+      "vendor": "segellfosc-dev-ayfx",
+      "url": "https://www.menjometre.cat/mcp",
+      "smitheryUseCount": 9534,
+      "serverName": "menjometre-mcp",
+      "tools": "48",
+      "homepage": "https://menjometre.cat/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "info-6d0w/backtesting-arena",
+      "vendor": "info-6d0w",
+      "url": "https://tradingstrategies.work/api/mcp",
+      "smitheryUseCount": 9340,
+      "serverName": "backtesting-arena",
+      "tools": "65",
+      "homepage": "https://tradingstrategies.work/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "malinoto/tracepass-mcp-server",
+      "vendor": "malinoto",
+      "url": "https://ai.tracepass.eu/mcp",
+      "smitheryUseCount": 7835,
+      "serverName": "tracepass",
+      "tools": "6",
+      "homepage": "https://tracepass.eu/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "memxus/memxus",
+      "vendor": "memxus",
+      "url": "https://mcp.memxus.com/mcp",
+      "smitheryUseCount": 6038,
+      "serverName": "memxus",
+      "tools": "8",
+      "homepage": "https://memxus.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "DomainKits/domainkits",
+      "vendor": "DomainKits",
+      "url": "https://api.domainkits.com/v1/mcp",
+      "smitheryUseCount": 5388,
+      "serverName": null,
+      "tools": "28",
+      "homepage": "https://domainkits.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "autario/data",
+      "vendor": "autario",
+      "url": "https://autario.com/mcp",
+      "smitheryUseCount": 5089,
+      "serverName": "autario",
+      "tools": "58",
+      "homepage": "https://autario.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "hello-lc0b/earlywire",
+      "vendor": "hello-lc0b",
+      "url": "https://earlywire.barisasa.com/mcp",
+      "smitheryUseCount": 4759,
+      "serverName": "Earlywire \u2014 Marketing & Growth Intelligence",
+      "tools": "6",
+      "homepage": "https://earlywire.barisasa.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "surprise-buddy/mcp-server",
+      "vendor": "surprise-buddy",
+      "url": "https://www.surprise-buddy.com/api/mcp",
+      "smitheryUseCount": 4734,
+      "serverName": "surprise-buddy",
+      "tools": "5",
+      "homepage": "https://surprise-buddy.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "uphealth/signal",
+      "vendor": "uphealth",
+      "url": "https://mcp.uphealth.us/mcp",
+      "smitheryUseCount": 4721,
+      "serverName": "uphealth-mcp",
+      "tools": "5",
+      "homepage": "https://uphealth.us/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "ali-7ogs/storyflo",
+      "vendor": "ali-7ogs",
+      "url": "https://api.storyflo.com/mcp/v1",
+      "smitheryUseCount": 4450,
+      "serverName": "Storyflo",
+      "tools": "23",
+      "homepage": "https://storyflo.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "cammac/IBANforge",
+      "vendor": "cammac",
+      "url": "https://api.ibanforge.com/mcp",
+      "smitheryUseCount": 4179,
+      "serverName": "ibanforge",
+      "tools": "11",
+      "homepage": "https://ibanforge.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "promptfax/promptfax",
+      "vendor": "promptfax",
+      "url": "https://promptfax.app/mcp",
+      "smitheryUseCount": 3913,
+      "serverName": "promptfax-mcp",
+      "tools": "8",
+      "homepage": "https://promptfax.app/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "Himalayas/himalayas-mcp",
+      "vendor": "Himalayas",
+      "url": "https://mcp.himalayas.app/mcp",
+      "smitheryUseCount": 3874,
+      "serverName": "Himalayas Remote Jobs MCP Server",
+      "tools": "34",
+      "homepage": "https://himalayas.app/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "blackboxfoundry/livedatalink",
+      "vendor": "blackboxfoundry",
+      "url": "https://livedatalink.ai/mcp",
+      "smitheryUseCount": 3686,
+      "serverName": "livedatalink",
+      "tools": "294",
+      "homepage": "https://livedatalink.ai/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "azmartone67/dchub",
+      "vendor": "azmartone67",
+      "url": "https://dchub.cloud/mcp",
+      "smitheryUseCount": 3573,
+      "serverName": "DC Hub Intelligence",
+      "tools": "94",
+      "homepage": "https://dchub.cloud/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "ralf/fyndling",
+      "vendor": "ralf",
+      "url": "https://fyndling.de/mcp",
+      "smitheryUseCount": 3540,
+      "serverName": "fyndling",
+      "tools": "8",
+      "homepage": "https://fyndling.de/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "scholar-sidekick/remote",
+      "vendor": "scholar-sidekick",
+      "url": "https://scholar-sidekick.com/api/mcp",
+      "smitheryUseCount": 3229,
+      "serverName": "scholar-sidekick",
+      "tools": "6",
+      "homepage": "https://scholar-sidekick.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "shibui/finance",
+      "vendor": "shibui",
+      "url": "https://mcp.shibui.finance/mcp",
+      "smitheryUseCount": 2882,
+      "serverName": "shibui-finance-stock-data",
+      "tools": "12",
+      "homepage": "https://shibui.finance/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "paracetamol951/kash",
+      "vendor": "paracetamol951",
+      "url": "https://mcp.kash.click/mcp",
+      "smitheryUseCount": 2880,
+      "serverName": "caisse-enregistreuse-api",
+      "tools": "39",
+      "homepage": "https://kash.click/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "memestack/mcp",
+      "vendor": "memestack",
+      "url": "https://mcp.memestack.ai/mcp",
+      "smitheryUseCount": 2754,
+      "serverName": "memestack",
+      "tools": "20",
+      "homepage": "https://memestack.ai/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "erik-7clt/local-intel",
+      "vendor": "erik-7clt",
+      "url": "https://gsb-swarm-production.up.railway.app/api/local-intel/mcp",
+      "smitheryUseCount": 2741,
+      "serverName": "localintel",
+      "tools": "20",
+      "homepage": "https://gsb-swarm-production.up.railway.app/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "senzing/entity-resolution",
+      "vendor": "senzing",
+      "url": "https://mcp.senzing.com/mcp",
+      "smitheryUseCount": 2671,
+      "serverName": "sz-mcp-coworker",
+      "tools": "13",
+      "homepage": "https://senzing.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "social/oral-heritage-index",
+      "vendor": "social",
+      "url": "https://oral-heritage-index.inktree.ai/mcp",
+      "smitheryUseCount": 2652,
+      "serverName": "oral-heritage-index",
+      "tools": "6",
+      "homepage": "https://oral-heritage-index.inktree.ai/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "sidneybissoli/ibge-br-mcp",
+      "vendor": "sidneybissoli",
+      "url": "https://ibge.sidneybissoli.com/mcp",
+      "smitheryUseCount": 2521,
+      "serverName": "ibge-br-mcp",
+      "tools": "23",
+      "homepage": "https://ibge.sidneybissoli.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "redilinxa/toyshub",
+      "vendor": "redilinxa",
+      "url": "https://toyshub.al/mcp",
+      "smitheryUseCount": 2240,
+      "serverName": "toyshub.al",
+      "tools": "7",
+      "homepage": "https://toyshub.al/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "contact-deyv/svgicons",
+      "vendor": "contact-deyv",
+      "url": "https://svgicons.com/mcp",
+      "smitheryUseCount": 2197,
+      "serverName": "svgicons-mcp",
+      "tools": "12",
+      "homepage": "https://svgicons.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "contact-ymj4/timers-studio",
+      "vendor": "contact-ymj4",
+      "url": "https://mcp.timers.studio/mcp",
+      "smitheryUseCount": 2111,
+      "serverName": "timers-studio-mcp-server",
+      "tools": "4",
+      "homepage": "https://timers.studio/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "codemadebiz/focus-streak-habit-tracker",
+      "vendor": "codemadebiz",
+      "url": "https://focusstreak.codemadebiz.com/mcp",
+      "smitheryUseCount": 1875,
+      "serverName": "focus-streak-mcp",
+      "tools": "5",
+      "homepage": "https://focusstreak.codemadebiz.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "stockslash/sec-13f",
+      "vendor": "stockslash",
+      "url": "https://stockslash.com/mcp",
+      "smitheryUseCount": 1779,
+      "serverName": "stockslash-mcp-server",
+      "tools": "23",
+      "homepage": "https://stockslash.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "coachsync/barbell-tools",
+      "vendor": "coachsync",
+      "url": "https://mcp.coachsync.io/mcp",
+      "smitheryUseCount": 1603,
+      "serverName": "coachsync",
+      "tools": "3",
+      "homepage": "https://coachsync.io/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "evgenii-zinner/ez-qr-generator",
+      "vendor": "evgenii-zinner",
+      "url": "https://ez-qr-generator.com/mcp",
+      "smitheryUseCount": 1509,
+      "serverName": "ez-qr-generator-mcp",
+      "tools": "1",
+      "homepage": "https://ez-qr-generator.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "simon-9wwy/toolzy-mcp",
+      "vendor": "simon-9wwy",
+      "url": "https://mcp.toolzy.io/api/mcp",
+      "smitheryUseCount": 1447,
+      "serverName": "toolzy",
+      "tools": "3",
+      "homepage": "https://toolzy.io/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "support-i3bt/kpi-depot",
+      "vendor": "support-i3bt",
+      "url": "https://kpidepot.com/mcp",
+      "smitheryUseCount": 1434,
+      "serverName": "kpi-depot",
+      "tools": "3",
+      "homepage": "https://kpidepot.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "naimterrache/frigolog-haccp",
+      "vendor": "naimterrache",
+      "url": "https://frigolog.fr/api/mcp",
+      "smitheryUseCount": 1332,
+      "serverName": "frigolog-haccp",
+      "tools": "16",
+      "homepage": "https://frigolog.fr/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "sidneybissoli/senado-br-mcp-cloudflare",
+      "vendor": "sidneybissoli",
+      "url": "https://senado.sidneybissoli.com/mcp",
+      "smitheryUseCount": 1281,
+      "serverName": "senado-br-mcp",
+      "tools": "69",
+      "homepage": "https://senado.sidneybissoli.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "tandem/docs-mcp",
+      "vendor": "tandem",
+      "url": "https://tandem.ac/mcp",
+      "smitheryUseCount": 1205,
+      "serverName": "ac.tandem/docs-mcp",
+      "tools": "13",
+      "homepage": "https://tandem.ac/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "rowhint-ntm5/RowHint",
+      "vendor": "rowhint-ntm5",
+      "url": "https://mcp.rowhint.com/mcp",
+      "smitheryUseCount": 1180,
+      "serverName": "RowHint Seat Intelligence",
+      "tools": "5",
+      "homepage": "https://rowhint.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "hartjustin6/energyai",
+      "vendor": "hartjustin6",
+      "url": "https://api.energyaisolution.com/mcp",
+      "smitheryUseCount": 1161,
+      "serverName": "energyai-mcp",
+      "tools": "21",
+      "homepage": "https://energyaisolution.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "jan/audioknihy-catalog",
+      "vendor": "jan",
+      "url": "https://audioknihy.cz/api/mcp",
+      "smitheryUseCount": 1126,
+      "serverName": "cz.audioknihy/catalog",
+      "tools": "9",
+      "homepage": "https://audioknihy.cz/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "deskcrew/support",
+      "vendor": "deskcrew",
+      "url": "https://deskcrew.io/api/mcp/deskcrew",
+      "smitheryUseCount": 912,
+      "serverName": "DeskCrew",
+      "tools": "15",
+      "homepage": "https://deskcrew.io/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "deficlow/hyperstore",
+      "vendor": "deficlow",
+      "url": "https://mcp.store.hypergpt.ai/mcp",
+      "smitheryUseCount": 900,
+      "serverName": "hyperstore",
+      "tools": "8",
+      "homepage": "https://store.hypergpt.ai/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "tuffguy6532/policyping",
+      "vendor": "tuffguy6532",
+      "url": "https://mcp.policyping.net/mcp",
+      "smitheryUseCount": 771,
+      "serverName": "policyping",
+      "tools": "13",
+      "homepage": "https://policyping.net/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "contact-v901/vee3",
+      "vendor": "contact-v901",
+      "url": "https://mcp.vee3.io/mcp",
+      "smitheryUseCount": 740,
+      "serverName": "Vee3",
+      "tools": "474",
+      "homepage": "https://vee3.io/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "oversight/threat-intel",
+      "vendor": "oversight",
+      "url": "https://mcp.sectora.io/mcp",
+      "smitheryUseCount": 677,
+      "serverName": "sectora-mcp-server",
+      "tools": "8",
+      "homepage": "https://sectora.io/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "appendix/appendix",
+      "vendor": "appendix",
+      "url": "https://mcp.appendix.com/mcp",
+      "smitheryUseCount": 665,
+      "serverName": "Appendix",
+      "tools": "3",
+      "homepage": "https://appendix.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "olympus-bets/olympus-bets-analytics",
+      "vendor": "olympus-bets",
+      "url": "https://app.olympus-bets.com/mcp",
+      "smitheryUseCount": 614,
+      "serverName": "olympus-bets-analytics",
+      "tools": "19",
+      "homepage": "https://olympus-bets.com/",
+      "credit": "originally listed on Smithery"
+    },
+    {
+      "name": "nitrofire-q/gread",
+      "vendor": "NitroRCr (Apache-2.0, github.com/NitroRCr/gread)",
+      "url": "https://api.gread.dev/mcp",
+      "smitheryUseCount": 21140,
+      "serverName": "Gread",
+      "tools": "5",
+      "homepage": "https://gread.dev/",
+      "credit": "originally listed on Smithery"
+    }
+  ],
+  "rebuilds": [
+    {
+      "slug": "nws-point-forecast",
+      "url": "https://x402-v2-mint-nws-point-forecast.vercel.app/v1/nws-point-forecast",
+      "price": "$0.003",
+      "note": "isolated mint; listed:true; Smithery Track B rebuild of smithery-ai/national-weather-service (17,177 uses); upstream api.weather.gov /points \u2192 forecast; not paid-settled (CDP index HOLD)"
+    },
+    {
+      "slug": "nws-latest-observation",
+      "url": "https://x402-v2-mint-nws-latest-observation.vercel.app/v1/nws-latest-observation",
+      "price": "$0.003",
+      "note": "isolated mint; listed:true; Smithery Track B rebuild of smithery-ai/national-weather-service (17,177 uses); upstream api.weather.gov /stations/{id}/observations/latest; not paid-settled (CDP index HOLD)"
+    },
+    {
+      "slug": "pubmed-article-summary",
+      "url": "https://x402-v2-mint-pubmed-article-summary.vercel.app/v1/pubmed-article-summary",
+      "price": "$0.003",
+      "note": "isolated mint; listed:true; Smithery Track B rebuild of cyanheads/pubmed-mcp-server (13,948 uses); upstream NCBI E-utilities esummary; not paid-settled (CDP index HOLD)"
+    },
+    {
+      "slug": "npm-downloads",
+      "url": "https://x402-v2-mint-npm-downloads.vercel.app/v1/npm-downloads",
+      "price": "$0.003",
+      "note": "isolated mint; listed:true; Smithery Track B rebuild of Nekzus/npm-sentinel-mcp (13,278 uses); upstream api.npmjs.org downloads; not paid-settled (CDP index HOLD)"
+    },
+    {
+      "slug": "npm-search",
+      "url": "https://x402-v2-mint-npm-search.vercel.app/v1/npm-search",
+      "price": "$0.003",
+      "note": "isolated mint; listed:true; Smithery Track B rebuild of Nekzus/npm-sentinel-mcp (13,278 uses); upstream registry.npmjs.org /-/v1/search; not paid-settled (CDP index HOLD)"
+    },
+    {
+      "slug": "nvd-cpe-search",
+      "url": "https://x402-v2-mint-nvd-cpe-search.vercel.app/v1/nvd-cpe-search",
+      "price": "$0.003",
+      "note": "isolated mint; listed:true; Smithery Track B rebuild of cyanheads/nist-nvd-mcp-server (12,481 uses); upstream NVD CPE API 2.0; not paid-settled (CDP index HOLD)"
+    },
+    {
+      "slug": "nhtsa-vin-decode",
+      "url": "https://x402-v2-mint-nhtsa-vin-decode.vercel.app/v1/nhtsa-vin-decode",
+      "price": "$0.003",
+      "note": "isolated mint; listed:true; Smithery Track B rebuild of motivegrid/vehicle-database (10,122 uses); upstream NHTSA vPIC DecodeVinValues; not paid-settled (CDP index HOLD)"
+    },
+    {
+      "slug": "nhtsa-models-for-make",
+      "url": "https://x402-v2-mint-nhtsa-models-for-make.vercel.app/v1/nhtsa-models-for-make",
+      "price": "$0.003",
+      "note": "isolated mint; listed:true; Smithery Track B rebuild of motivegrid/vehicle-database (10,122 uses); upstream NHTSA vPIC GetModelsForMake(Year); not paid-settled (CDP index HOLD)"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# x402 v2 Marketplace
+
+- [Smithery migration directory](https://x402-v2-marketplace.vercel.app/smithery-migration): direct vendor URLs for 50 former Smithery MCP servers.
