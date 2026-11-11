@@ -1,13 +1,10 @@
 {
-  "fetched_at": "2026-11-10 11:14 PM CT",
-  "fetched_at_iso": "2026-11-10T23:14:18.730494-06:00",
+  "fetched_at": "2026-11-11 12:11 AM CT",
   "items": [
     {
       "shop": "x402-micro-pay.com",
       "source": "https://x402-micro-pay.com/api/catalog",
-      "final_url": "https://x402-micro-pay.com/api/catalog",
       "http_status": 200,
-      "content_type": "application/json",
       "bytes": 103933,
       "path": "x402-micro-pay/api-catalog.json",
       "note": ""
@@ -15,9 +12,7 @@
     {
       "shop": "x402-micro-pay.com",
       "source": "https://x402-micro-pay.com/.well-known/x402",
-      "final_url": "https://x402-micro-pay.com/.well-known/x402",
       "http_status": 200,
-      "content_type": "application/json",
       "bytes": 53650,
       "path": "x402-micro-pay/well-known-x402.json",
       "note": ""
@@ -25,9 +20,7 @@
     {
       "shop": "x402-micro-pay.com",
       "source": "https://x402-micro-pay.com/llms.txt",
-      "final_url": "https://x402-micro-pay.com/llms.txt",
       "http_status": 200,
-      "content_type": "text/plain",
       "bytes": 9599,
       "path": "x402-micro-pay/llms.txt",
       "note": ""
@@ -35,29 +28,23 @@
     {
       "shop": "x403-harbinger.com",
       "source": "https://www.x403-harbinger.com/api/catalog",
-      "final_url": "https://www.x403-harbinger.com/api/catalog",
-      "http_status": 404,
-      "content_type": "text/html",
-      "bytes": 168,
+      "http_status": 0,
+      "bytes": 142,
       "path": "x403-harbinger/api-catalog.json",
-      "note": "live endpoint returned 404"
+      "note": "live endpoint was not 200"
     },
     {
       "shop": "x403-harbinger.com",
       "source": "https://www.x403-harbinger.com/.well-known/x402",
-      "final_url": "https://www.x403-harbinger.com/.well-known/x402",
-      "http_status": 404,
-      "content_type": "text/html",
-      "bytes": 173,
+      "http_status": 0,
+      "bytes": 147,
       "path": "x403-harbinger/well-known-x402.json",
-      "note": "live endpoint returned 404"
+      "note": "live endpoint was not 200"
     },
     {
       "shop": "x403-harbinger.com",
       "source": "https://www.x403-harbinger.com/llms.txt",
-      "final_url": "https://www.x403-harbinger.com/llms.txt",
       "http_status": 200,
-      "content_type": "text/plain",
       "bytes": 1827,
       "path": "x403-harbinger/llms.txt",
       "note": ""
@@ -65,9 +52,7 @@
     {
       "shop": "x402-v2-marketplace.vercel.app",
       "source": "https://x402-v2-marketplace.vercel.app/.well-known/x402",
-      "final_url": "https://x402-v2-marketplace.vercel.app/.well-known/x402",
       "http_status": 200,
-      "content_type": "application/json",
       "bytes": 40290,
       "path": "x402-v2-marketplace/well-known-x402.json",
       "note": ""
@@ -75,9 +60,7 @@
     {
       "shop": "x402-v2-marketplace.vercel.app",
       "source": "https://x402-v2-marketplace.vercel.app/llms.txt",
-      "final_url": "https://x402-v2-marketplace.vercel.app/llms.txt",
       "http_status": 200,
-      "content_type": "text/plain",
       "bytes": 171,
       "path": "x402-v2-marketplace/llms.txt",
       "note": ""
@@ -85,31 +68,17 @@
     {
       "shop": "x402-v2-marketplace.vercel.app",
       "source": "https://x402-v2-marketplace.vercel.app/smithery-migration",
-      "final_url": "https://x402-v2-marketplace.vercel.app/smithery-migration",
       "http_status": 200,
-      "content_type": "text/html",
-      "bytes": 59919,
-      "path": "smithery-migration/index.raw.html",
+      "bytes": 60598,
+      "path": "smithery-migration/index.html",
       "note": ""
     },
     {
       "shop": "x402-v2-marketplace.vercel.app",
       "source": "https://x402-v2-marketplace.vercel.app/smithery-migration.json",
-      "final_url": "https://x402-v2-marketplace.vercel.app/smithery-migration.json",
       "http_status": 200,
-      "content_type": "application/json",
       "bytes": 18618,
       "path": "smithery-migration.json",
-      "note": ""
-    },
-    {
-      "shop": "x402-v2-marketplace.vercel.app (local public copy)",
-      "source": "file:///workspace/x402-v2/marketplace/public/smithery-migration.json",
-      "final_url": "file:///workspace/x402-v2/marketplace/public/smithery-migration.json",
-      "http_status": 200,
-      "content_type": "application/octet-stream",
-      "bytes": 18618,
-      "path": "smithery-migration.local.json",
       "note": ""
     }
   ]
