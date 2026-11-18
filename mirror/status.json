@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-17 01:36 AM CT",
+  "fetched_at": "2026-11-18 01:42 AM CT",
   "items": [
     {
       "shop": "x402-micro-pay.com",
@@ -13,7 +13,7 @@
       "shop": "x402-micro-pay.com",
       "source": "https://x402-micro-pay.com/.well-known/x402",
       "http_status": 200,
-      "bytes": 53650,
+      "bytes": 306366,
       "path": "x402-micro-pay/well-known-x402.json",
       "note": ""
     },
@@ -21,7 +21,7 @@
       "shop": "x402-micro-pay.com",
       "source": "https://x402-micro-pay.com/llms.txt",
       "http_status": 200,
-      "bytes": 9599,
+      "bytes": 43521,
       "path": "x402-micro-pay/llms.txt",
       "note": ""
     },
