@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20 01:42 AM CT",
+  "fetched_at": "2026-11-21 01:43 AM CT",
   "items": [
     {
       "shop": "x402-micro-pay.com",
@@ -53,7 +53,7 @@
       "shop": "x402-v2-marketplace.vercel.app",
       "source": "https://x402-v2-marketplace.vercel.app/.well-known/x402",
       "http_status": 200,
-      "bytes": 40290,
+      "bytes": 41021,
       "path": "x402-v2-marketplace/well-known-x402.json",
       "note": ""
     },
@@ -61,7 +61,7 @@
       "shop": "x402-v2-marketplace.vercel.app",
       "source": "https://x402-v2-marketplace.vercel.app/llms.txt",
       "http_status": 200,
-      "bytes": 171,
+      "bytes": 448,
       "path": "x402-v2-marketplace/llms.txt",
       "note": ""
     },

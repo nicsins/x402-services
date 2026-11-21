@@ -1,3 +1,7 @@
-# x402 v2 Marketplace
+# x402 v2 Marketplace (DEV copy — not indexed)
 
-- [Smithery migration directory](https://x402-v2-marketplace.vercel.app/smithery-migration): direct vendor URLs for 50 former Smithery MCP servers.
+This is a development copy. The live marketplace and catalog are at https://x402-micro-pay.com
+
+- [Live marketplace](https://x402-micro-pay.com/): pay-per-call x402 services.
+- [Live catalog](https://x402-micro-pay.com/catalog.json): authoritative service list.
+- [Smithery migration directory](https://x402-micro-pay.com/smithery-migration): direct vendor URLs for 50 former Smithery MCP servers.
